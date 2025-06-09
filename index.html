@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário de contato</title>
+    <style>
+        
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        main{
+            display: block;
+            justify-items: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 10%;
+            font-size: 37px;
+            margin-top: 7%;
+            color: rgb(47, 47, 47);
+        }
+        
+        form{
+            box-shadow: 0px 0px 55px rgb(190, 190, 190);
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 590px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        ::placeholder{
+            font-size: 17px;
+        }
+
+        label{
+            font-size: 19px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: rgb(47, 47, 47);
+        }
+
+        input{
+            padding: 15px;
+            margin-bottom: 5%;
+            border-radius: 10px;
+            border: 1px solid rgb(96, 96, 96);
+            transition: 0.5s;
+        }
+
+        input:focus{
+            border-color: dodgerblue;
+            outline: none;
+        }
+
+        textarea{
+            padding: 15px;
+            height: 110px;
+            border-radius: 10px;
+        }
+
+        textarea:focus{
+            border-color: dodgerblue;
+            outline: none;
+        }
+
+
+        button{
+            margin-top: 7%;
+            padding: 15px;
+            font-size: 15px;
+            margin-bottom: 3%;
+            background-color: dodgerblue;
+            border: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1000px){
+             
+            form{
+            box-shadow: 0px 0px 55px rgb(190, 190, 190);
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 590px;
+            padding: 20px;
+            border-radius: 15px;
+            
+        }
+        }
+
+        @media (max-width: 800px){
+             
+             form{
+             box-shadow: 0px 0px 55px rgb(190, 190, 190);
+             display: flex;
+             flex-direction: column;
+             width: 50%;
+             height: 590px;
+             padding: 20px;
+             border-radius: 15px;
+             
+         }
+        }
+
+         @media (max-width: 600px){
+             
+             form{
+             box-shadow: 0px 0px 55px rgb(190, 190, 190);
+             display: flex;
+             flex-direction: column;
+             width: 60%;
+             height: 590px;
+             padding: 20px;
+             border-radius: 15px;
+             
+         }
+         }
+
+         @media (max-width: 400px){
+             
+             form{
+             box-shadow: 0px 0px 55px rgb(190, 190, 190);
+             display: flex;
+             flex-direction: column;
+             width: 100%;
+             height: 590px;
+             padding: 20px;
+             border-radius: 15px;
+             
+         }
+         }
+         
+    </style>
+</head>
+<body>
+    <main>
+        
+        <form action="imaginario.php" method="post">
+            <h1>Fale conosco</h1>
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Seu nome..." name="nome" id="nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Seu email..." name="email" id="email" required>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem..." name="mensagem" id="mensagem" required></textarea>
+            <button type="submit" name="btn-enviar" id="btn-enviar" required>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
